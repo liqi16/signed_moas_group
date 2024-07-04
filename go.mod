@@ -4,6 +4,8 @@ go 1.19
 
 require (
 	github.com/cloudflare/gortr v0.14.7
+	github.com/consensys/gnark v0.8.0 //smg
+	github.com/consensys/gnark-crypto v0.9.1 //smg
 	github.com/getsentry/sentry-go v0.19.0
 	github.com/golang/protobuf v1.5.3
 	github.com/google/certificate-transparency-go v1.1.4
@@ -21,10 +23,12 @@ require (
 	github.com/HdrHistogram/hdrhistogram-go v1.1.2 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
+	github.com/consensys/bavard v0.1.13 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/go-logr/logr v1.2.3 // indirect
-	github.com/kr/pretty v0.2.1 // indirect
+	github.com/kr/pretty v0.3.1 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
+	github.com/mmcloughlin/addchain v0.4.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/prometheus/client_model v0.3.0 // indirect
@@ -40,6 +44,7 @@ require (
 	google.golang.org/protobuf v1.30.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	k8s.io/klog/v2 v2.90.1 // indirect
+	rsc.io/tmplfunc v0.0.3 // indirect
 )
 
 replace github.com/codahale/hdrhistogram => github.com/HdrHistogram/hdrhistogram-go v0.9.0
