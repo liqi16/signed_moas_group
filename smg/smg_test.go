@@ -110,6 +110,22 @@ func MakeKeyData(n int) MultSig {
 	return m
 }
 
+func TestSMG_DEC_Encoding(t *testing.T) {
+	//create SMG object
+	smg_object := NewSMGObject(0, []uint32{65002, 65012, 65022}, "0001", "10.0.1.0/24")
+	dec_encoding, err := smg_object.EncodeDER()
+	if err != nil {
+		t.Errorf("DER encoding failed")
+	}
+	fmt.Println(dec_encoding)
+}
+
+func TestSMG_DEC_Decoding(t *testing.T) {
+	dec_string := "3027020100a00f020300fdea020300fdf4020300fdfe130430303031130b31302e302e312e302f3234"
+	smg_object := DecodeDER(dec_string)
+	fmt.Println(smg_object)
+}
+
 func TestSMG(t *testing.T) {
 	vrp := MakeRoAData()
 	moas_route, moas_asn := MakeMOASData()
